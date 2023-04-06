@@ -1,0 +1,23 @@
+{
+  "name": "ui-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass -wr styles/main.scss dest/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/younhoso/UI-development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/younhoso/UI-development/issues"
+  },
+  "homepage": "https://github.com/younhoso/UI-development#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
