@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node-sass -wr src/styles/index.scss dist/style.css"
+    "dev": "node-sass -wr --source-map true src/styles/index.scss dist/style.css"
   },
   "repository": {
     "type": "git",
