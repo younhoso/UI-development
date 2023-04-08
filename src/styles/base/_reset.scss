@@ -6,46 +6,19 @@ body {
   width: 100%;
   -webkit-text-size-adjust: none;
 }
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-textarea,
-p,
-blockquote,
-th,
-td,
-input,
-select,
-textarea,
-button,
-a,
-span {
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,
+textarea,p,blockquote,
+th,td,input,select,button,a,span {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-body,
-input,
-select,
-textarea,
-button,
-table {
+body,input,select,
+textarea,button,table {
   font-family: $font-main;
   font-size: $font-size-16;
   line-height: $line-height-16;
@@ -53,15 +26,8 @@ table {
   color: $gray-3;
   word-break: keep-all;
   word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-weight: inherit;
   font-size: inherit;
 }
