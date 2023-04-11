@@ -23,7 +23,7 @@ textarea,button,table {
   font-size: $font-size-16;
   line-height: $line-height-16;
   font-weight: 400;
-  color: $gray-3;
+  color: $gray-3f;
   word-break: keep-all;
   word-wrap: break-word;
 }
@@ -134,7 +134,7 @@ radio {
   &[disabled='disabled'] {
     background-color: $white;
     cursor: default;
-    border-color: $gray-1;
+    border-color: $gray-19;
   }
 }
 
@@ -155,23 +155,23 @@ select::-ms-expand {
   display: none;
 }
 ::-webkit-input-placeholder {
-  color: $gray-3;
+  color: $gray-3f;
   font-weight: normal;
 }
 ::-moz-placeholder {
-  color: $gray-3;
+  color: $gray-3f;
   font-weight: normal;
 }
 :-ms-input-placeholder {
-  color: $gray-3;
+  color: $gray-3f;
   font-weight: normal;
 }
 :-moz-placeholder {
-  color: $gray-3;
+  color: $gray-3f;
   font-weight: normal;
 }
 select.placeholder {
-  color: $gray-3;
+  color: $gray-3f;
   font-weight: normal;
 }
 th,

@@ -1,7 +1,7 @@
 %starRatingBase {
   @include flexBox(start);
   .ic-star {
-    color: $gray-e;
+    color: $gray-e0;
 
     &.is-active {
       color: $blue;
