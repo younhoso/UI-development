@@ -1,3 +1,14 @@
+/** 
+@example
+.section { 
+  @include deviceBreakpoint(T){
+    color: red
+  };
+  @include deviceBreakpoint(D){
+    color: blue
+  };
+}
+*/
 @mixin deviceBreakpoint($screen) {
   @if ($screen == 'T') {
     @media screen and (min-width: $md-breakpoint) {
