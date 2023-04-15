@@ -1,3 +1,4 @@
+// map의미 "key1: value1 ..." 형식의 데이터뜻(쉽게는 json형태라 생각하자).
 $flex-map: (
   start: flex-start,
   end: flex-end,
@@ -7,23 +8,24 @@ $flex-map: (
   center: center,
 );
 
+// map-get으로 flex-map값에 있는 값을 가져와 리턴합니다.
 @function _get-flex-value($key) {
   @return map-get($flex-map, $key);
 }
 
-@mixin flexBox($jc: center, $ai: center) {
+@mixin flexBox($ai: center, $jc: center) {
   display: flex;
   align-items: _get-flex-value($ai);
   justify-content: _get-flex-value($jc);
 }
 
-@mixin inline-flexBox($jc: center, $ai: center) {
+@mixin inline-flexBox($ai: center, $jc: center) {
   display: inline-flex;
   align-items: _get-flex-value($ai);
   justify-content: _get-flex-value($jc);
 }
 
-@mixin column-flexBox($jc: center, $ai: center) {
+@mixin column-flexBox($ai: center, $jc: center) {
   display: flex;
   flex-direction: column;
   align-items: _get-flex-value($ai);
