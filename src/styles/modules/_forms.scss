@@ -1,0 +1,75 @@
+%form-base {
+  //공통 스타일 선언
+  @include textStyle(16, $gray-3f);
+  width: 100%;
+  display: block;
+  height: 40px;
+  padding: 0 16px;
+  background-color: $white;
+  border: 1px solid $gray-e0;
+  border-radius: 4px;
+  transition: background-color 200ms ease-in-out;
+  appearance: none;
+
+  &::placeholder {
+    color: $gray-b2;
+  }
+
+  &:not(:disabled):hover {
+    background-color: $gray-f7;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+};
+
+.form-select,
+.form-input {
+  @extend %form-base
+};
+
+
+// NOTE: Select
+.select-group {
+  position: relative;
+
+
+  &.is-active {
+    .form-select {
+      border-color: $blue;
+    }
+    .ic-caret {
+      color: $blue;
+    }
+  }
+  .form-select {
+    padding-right: 40px;
+    text-overflow: ellipsis;
+  }
+
+  .ic-caret{
+    @include pos-center-y;
+    right: 8px;
+    font-size: 24px;
+    color: $gray-b2;
+    pointer-events: none;
+  }
+};
+
+// NOTE: Input
+.input-group {
+  position: relative;
+
+  .ic-search {
+    @include pos-center-y;
+    left: 10px;
+    font-size: 20px;
+    color: $gray-8c;
+  }
+  .form-input {
+    padding-left: 40px;
+    padding-right: 16px;
+  }
+}
