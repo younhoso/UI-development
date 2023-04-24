@@ -1,8 +1,14 @@
 %btn-base {
-  @include inline-flexbox;
+  //공통 스타일 선언
+  @include inline-flexBox;
   padding: 0 8px;
   font-weight: 700;
   border-radius: 4px;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed
+  }
 }
 
 /* NOTE : Button Styles */
@@ -10,12 +16,22 @@
   @extend %btn-base;
   color: $white;
   background-color: $blue;
+  transition: background-color 200ms ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $blue-dark;
+  }
 }
 
 .btn-secondary {
   @extend %btn-base;
   color: $gray-3f;
   background-color: $gray-e0;
+  transition: background-color 200ms ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $gray-b2;
+  }
 }
 
 .btn-outlined {
@@ -23,33 +39,43 @@
   color: $blue;
   background-color: $white;
   border: 1px solid $blue;
+  transition: background-color 200ms ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $blue-light;
+  }
 }
 
 .btn-ghost {
   @extend %btn-base;
   color: $gray-3f;
   background-color: transparent;
+  transition: color 200ms ease-in-out;
+
+  &:not(:disabled):hover {
+    color: $gray-8c;
+  }
 }
 /* NOTE : Button Styles / */
 
 /* NOTE : Button Size */
 .btn-32 {
-  @include text-style(14);
+  @include textStyle(14);
   height: 32px;
 }
 
 .btn-40 {
-  @include text-style(16);
+  @include textStyle(16);
   height: 40px;
 }
 
 .btn-48 {
-  @include text-style(16);
+  @include textStyle(16);
   height: 48px;
 }
 
 .btn-55 {
-  @include text-style(18);
+  @include textStyle(18);
   height: 55px;
 }
 /* NOTE : Button Size / */
