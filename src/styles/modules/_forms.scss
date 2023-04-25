@@ -23,18 +23,16 @@
     cursor: not-allowed;
     opacity: 0.4;
   }
-};
+}
 
 .form-select,
 .form-input {
-  @extend %form-base
-};
-
+  @extend %form-base;
+}
 
 // NOTE: Select
 .select-group {
   position: relative;
-
 
   &.is-active {
     .form-select {
@@ -49,14 +47,14 @@
     text-overflow: ellipsis;
   }
 
-  .ic-caret{
+  .ic-caret {
     @include pos-center-y;
     right: 8px;
     font-size: 24px;
     color: $gray-b2;
     pointer-events: none;
   }
-};
+}
 
 // NOTE: Input
 .input-group {
